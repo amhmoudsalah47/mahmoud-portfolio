@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="author" content="Mahmoud Salah" />
+  <meta name="description" id="meta-description" content="Portfolio محمود صلاح — طالب تكنولوجيا معلومات (IT) وصانع حلول رقمية، مهتم بالشبكات والمونتاج والتجارة الإلكترونية وتطوير المواقع والتطبيقات بالذكاء الاصطناعي." />
+  <meta name="keywords" content="Mahmoud Salah, محمود صلاح, Portfolio, IT Student, Networking, Cisco Packet Tracer, Video Editing, Podcast Clipping, E-commerce, Web Development, Mobile Apps" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" id="og-title" content="Mahmoud Salah Portfolio | ببني مهاراتي، وبحوّل الأفكار لحلول" />
+  <meta property="og:description" id="og-description" content="الموقع الشخصي لمحمود صلاح — طالب تكنولوجيا معلومات، شبكات، مونتاج، تجارة إلكترونية، وتطوير مواقع وتطبيقات." />
+  <meta property="og:image" content="mahmoud-salah.jpg" />
+  <meta property="og:locale" content="ar_AR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mahmoud Salah Portfolio" />
+  <meta name="twitter:description" content="IT Student · Creative Builder — Building skills, turning ideas into solutions." />
+  <meta name="twitter:image" content="mahmoud-salah.jpg" />
+
+  <title id="page-title">محمود صلاح | Mahmoud Salah Portfolio</title>
+
+  <!-- Favicon (SVG inline data uri) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%236ee7e0'/%3E%3Cstop offset='100%25' stop-color='%239c8cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%23111a2d'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='18' fill='url(%23g)'%3EM%3C/text%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Cairo (Arabic) & Inter (English) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient background lighting effects -->
+  <div class="ambient-glow ambient-cyan" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-purple" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-center" aria-hidden="true"></div>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="#home" class="brand" aria-label="Mahmoud Salah Home">
+        <span class="brand-badge">M</span>
+        <span class="brand-name">Mahmoud<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-item active" data-i18n="nav_home">الرئيسية</a>
+        <a href="#about" class="nav-item" data-i18n="nav_about">نبذة عني</a>
+        <a href="#skills" class="nav-item" data-i18n="nav_skills">المهارات</a>
+        <a href="#experience" class="nav-item" data-i18n="nav_experience">الخبرات</a>
+        <a href="#projects" class="nav-item" data-i18n="nav_projects">المشاريع</a>
+        <a href="#future-projects" class="nav-item" data-i18n="nav_future_projects">مشاريع مستقبلية</a>
+        <a href="#business-model" class="nav-item" data-i18n="nav_business_model">نموذج العمل</a>
+        <a href="#contact" class="nav-item nav-contact-btn" data-i18n="nav_contact">تواصل معي</a>
+      </nav>
+
+      <!-- Language Switcher & Mobile Menu Toggle -->
+      <div class="header-controls">
+        <div class="lang-switch-wrap">
+          <button type="button" class="lang-toggle-btn" id="lang-toggle" aria-label="Switch Language / تغيير اللغة">
+            <span class="lang-pill" id="lang-pill"></span>
+            <span class="lang-opt" data-lang="ar">AR</span>
+            <span class="lang-opt" data-lang="en">EN</span>
+          </button>
+        </div>
+
+        <button type="button" class="menu-toggle-btn" id="menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="brand">
+        <span class="brand-badge">M</span>
+        <span class="brand-name">Mahmoud<span class="brand-dot">.</span></span>
+      </div>
+      <button type="button" class="drawer-close-btn" id="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#home" class="drawer-item" data-i18n="nav_home">الرئيسية</a>
+      <a href="#about" class="drawer-item" data-i18n="nav_about">نبذة عني</a>
+      <a href="#skills" class="drawer-item" data-i18n="nav_skills">المهارات</a>
+      <a href="#experience" class="drawer-item" data-i18n="nav_experience">الخبرات</a>
+      <a href="#projects" class="drawer-item" data-i18n="nav_projects">المشاريع</a>
+      <a href="#future-projects" class="drawer-item" data-i18n="nav_future_projects">مشاريع مستقبلية</a>
+      <a href="#business-model" class="drawer-item" data-i18n="nav_business_model">نموذج العمل</a>
+      <a href="#contact" class="drawer-item drawer-cta" data-i18n="nav_contact">تواصل معي</a>
+    </div>
+    <div class="drawer-footer">
+      <p class="drawer-slogan" data-i18n="hero_slogan">"ببني مهاراتي، وبحوّل الأفكار لحلول."</p>
+      <div class="drawer-contacts">
+        <a href="https://wa.me/201145690507" target="_blank" rel="noopener noreferrer" class="drawer-contact-link">WhatsApp 1</a>
+        <a href="https://wa.me/201070619939" target="_blank" rel="noopener noreferrer" class="drawer-contact-link">WhatsApp 2</a>
+        <a href="mailto:amhmoudsalah47@gmail.com" class="drawer-contact-link">Email</a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-grid">
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <div class="eyebrow-badge">
+            <span class="status-pulse-dot" aria-hidden="true"></span>
+            <span data-i18n="hero_eyebrow">IT STUDENT · CREATIVE BUILDER</span>
+          </div>
+
+          <h1 class="hero-title" data-i18n="hero_title">
+            ببني مهاراتي،<br />
+            <span class="gradient-text">وبحوّل الأفكار لحلول.</span>
+          </h1>
+
+          <p class="hero-description" data-i18n="hero_description">
+            أنا محمود صلاح، طالب في تكنولوجيا المعلومات مهتم بالشبكات والتقنية وصناعة المحتوى والتجارة الإلكترونية. أطور مهاراتي باستمرار وأبني المواقع والتطبيقات والحلول الرقمية بمساعدة أدوات الذكاء الاصطناعي.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">
+              <span>استكشف مشاريعي</span>
+              <span class="btn-icon" aria-hidden="true">↓</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost" data-i18n="hero_btn_contact">
+              <span>تواصل معي</span>
+              <span class="btn-icon" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <!-- Quick Information Badges -->
+          <div class="hero-quick-info">
+            <div class="info-pill">
+              <span class="info-icon">📍</span>
+              <span data-i18n="info_location">مصر (Egypt)</span>
+            </div>
+            <div class="info-pill">
+              <span class="info-icon">🎓</span>
+              <span data-i18n="info_education">الفرقة الثانية – جامعة تكنولوجية</span>
+            </div>
+            <div class="info-pill">
+              <span class="info-icon">🚀</span>
+              <span data-i18n="info_learning">تعلم مستمر (Always Learning)</span>
+            </div>
+            <div class="info-pill">
+              <span class="info-icon">💡</span>
+              <span data-i18n="info_open">متاح للتعلم والمشاريع</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Card Visual -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <!-- Decorative Orbit Rings -->
+            <div class="orbit orbit-cyan" aria-hidden="true"></div>
+            <div class="orbit orbit-purple" aria-hidden="true"></div>
+
+            <!-- Profile Card -->
+            <article class="profile-card">
+              <div class="card-status-bar">
+                <span class="status-indicator">
+                  <span class="status-indicator-dot"></span>
+                  <span data-i18n="card_status">OPEN TO LEARNING & PROJECTS</span>
+                </span>
+                <span class="card-decor-dots" aria-hidden="true">•••</span>
+              </div>
+
+              <!-- Original Photo (Requirement: Must use original mahmoud-salah.jpg) -->
+              <div class="profile-photo-container">
+                <div class="photo-glow-ring"></div>
+                <img
+                  src="mahmoud-salah.jpg"
+                  alt="Mahmoud Salah - IT Student & Creative Builder"
+                  class="profile-photo"
+                  id="profile-img"
+                  loading="eager"
+                  width="170"
+                  height="170"
+                />
+              </div>
+
+              <div class="profile-meta">
+                <h2 class="profile-name" data-i18n="card_name">Mahmoud Salah</h2>
+                <p class="profile-specialization" data-i18n="card_specialization">IT · Networking · Digital Skills</p>
+              </div>
+
+              <!-- Tags -->
+              <div class="profile-tags">
+                <span class="tag" data-i18n="tag_networking">Networking</span>
+                <span class="tag" data-i18n="tag_editing">Video Editing</span>
+                <span class="tag" data-i18n="tag_web">Web Development</span>
+                <span class="tag" data-i18n="tag_app">App Development</span>
+              </div>
+
+              <!-- Card Footer -->
+              <div class="card-footer">
+                <span class="card-slogan-phrase" data-i18n="card_phrase_building">BUILDING STEP BY STEP</span>
+                <span class="card-year">2026 ↗</span>
+              </div>
+            </article>
+
+            <!-- Floating Badges -->
+            <div class="float-badge badge-top-right">
+              <span class="badge-icon">⚡</span>
+              <span data-i18n="badge_learn_build">LEARN · BUILD · IMPROVE</span>
+            </div>
+            <div class="float-badge badge-bottom-left">
+              <span class="badge-icon">🤖</span>
+              <span data-i18n="badge_ai_assisted">AI-ASSISTED DEVELOPMENT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="about_eyebrow">01 / ABOUT ME</p>
+          <h2 class="section-title" data-i18n="about_title">من هو محمود صلاح؟</h2>
+          <p class="section-subtitle" data-i18n="about_subtitle">طالب تكنولوجيا معلومات، شغوف بالتعلم العملي وبناء حلول رقمية ذات قيمة حقيقية.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p class="about-p lead" data-i18n="about_p1">
+              أنا محمود صلاح، طالب في الجامعة التكنولوجية (Technology University) مهتم بالشبكات، التقنية، صناعة المحتوى، التجارة الإلكترونية، وتطوير المنتجات الرقمية. شغوف بتعلم المهارات التقنية وتحويل المعرفة النظرية إلى تطبيقات عملية ومشاريع على أرض الواقع.
+            </p>
+            <p class="about-p" data-i18n="about_p2">
+              أعمل على تطوير مهاراتي في مجال الشبكات، ولدي خبرة عملية في المونتاج واقتطاع البودكاست (Podcast Clipping). كما أهتم ببناء مواقع المتاجر الإلكترونية وتطبيقات الهاتف التي تساعد أصحاب الأنشطة التجارية على إدارة أعمالهم بكفاءة أعلى.
+            </p>
+            <p class="about-p" data-i18n="about_p3">
+              أعتمد على أدوات الذكاء الاصطناعي كمساعد في التعلم والتطوير وبناء المشاريع مع التركيز الكامل على فهم الكود ومراجعته وتطويره. هدفي بناء منتجات رقمية حقيقية ونافعة يمكن تقديمها للعملاء كخدمات وتطويرها مستقبلاً.
+            </p>
+
+            <div class="about-quote-box">
+              <span class="quote-icon">“</span>
+              <p class="quote-text" data-i18n="about_quote">
+                هدفي ليس مجرد تجربة أدوات جديدة أو حفظ أكواد؛ بل فهم الأساس التقني المتين واستخدامه لبناء مشاريع حقيقية تقدم قيمة ملموسة للناس وأصحاب الأعمال.
+              </p>
+            </div>
+          </div>
+
+          <!-- About Highlights -->
+          <div class="about-cards-column">
+            <div class="feature-card">
+              <div class="feature-icon cyan-icon">🎯</div>
+              <div class="feature-content">
+                <h3 data-i18n="feat_practical_title">تطبيق عملي مباشر</h3>
+                <p data-i18n="feat_practical_desc">تحويل المعرفة النظرية إلى مختبرات شبكات حقيقية وتجارب تطبيقية بدون مبالغات.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon purple-icon">💼</div>
+              <div class="feature-content">
+                <h3 data-i18n="feat_business_title">حلول لأصحاب الأعمال</h3>
+                <p data-i18n="feat_business_desc">التركيز على المتاجر وتطبيقات الكاشير (POS) ولوحات التحكم التي تسهل الإدارة المستقلة.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon cyan-icon">🤖</div>
+              <div class="feature-content">
+                <h3 data-i18n="feat_ai_title">تطوير مدعوم بالذكاء الاصطناعي</h3>
+                <p data-i18n="feat_ai_desc">توظيف أدوات الـ AI لتسريع الإنجاز مع التدقيق والمراجعة الشاملة لجودة الكود وتصميمه.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & LEARNING PATHS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="skills_eyebrow">02 / SKILLS & LEARNING</p>
+          <h2 class="section-title" data-i18n="skills_title">المهارات ومسارات التعلم</h2>
+          <p class="section-subtitle" data-i18n="skills_subtitle">مقسمة بدقة بين خبرات عملية بدأت تطبيقها بالفعل، ومسارات تعلم مستمرة أعمل على تطويرها خطوة بخطوة.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 6.1 Networking -->
+          <article class="skill-card practical">
+            <div class="skill-card-top">
+              <span class="skill-badge practical-badge" data-i18n="skill_net_level">PRACTICAL · BEGINNER</span>
+              <span class="skill-cat-icon">⌁</span>
+            </div>
+            <h3 class="skill-title" data-i18n="skill_net_title">Networking (الشبكات)</h3>
+            <p class="skill-desc" data-i18n="skill_net_desc">تطبيق أساسيات الشبكات عملياً ومحاكاتها باستخدام Cisco Packet Tracer.</p>
+            <ul class="skill-list">
+              <li data-i18n="skill_net_1">إنشاء طوبولوجيا الشبكات (Network Topologies)</li>
+              <li data-i18n="skill_net_2">توصيل وإعداد أجهزة الراوتر والسويتش (Routers & Switches)</li>
+              <li data-i18n="skill_net_3">ربط أجهزة الكمبيوتر والأجهزة الشبكية المختلفة</li>
+              <li data-i18n="skill_net_4">إعداد وتوزيع عناوين IP Address</li>
+              <li data-i18n="skill_net_5">أساسيات تقسيم الشبكات (Basic Subnetting)</li>
+              <li data-i18n="skill_net_6">إعداد وتفعيل خادم DHCP Configuration</li>
+              <li data-i18n="skill_net_7">اختبار الاتصال واستقرار الشبكة بواسطة Ping</li>
+              <li data-i18n="skill_net_8">استكشاف وحل مشكلات الشبكة الأساسية (Troubleshooting)</li>
+            </ul>
+          </article>
+
+          <!-- 6.2 Video Editing & Podcast Clipping -->
+          <article class="skill-card practical">
+            <div class="skill-card-top">
+              <span class="skill-badge practical-badge" data-i18n="skill_edit_level">PRACTICAL EXPERIENCE</span>
+              <span class="skill-cat-icon">▶</span>
+            </div>
+            <h3 class="skill-title" data-i18n="skill_edit_title">Video Editing & Podcast Clipping</h3>
+            <p class="skill-desc" data-i18n="skill_edit_desc">خبرة عملية في تحويل حلقات البودكاست والفيديوهات الطويلة إلى مقاطع قصيرة ممتعة وجذابة للمشاهدات.</p>
+            <ul class="skill-list">
+              <li data-i18n="skill_edit_1">انتقاء اللحظات الأكثر إثارة وتأثيراً في البودكاست</li>
+              <li data-i18n="skill_edit_2">صياغة Hooks بصرية ونصوص تجذب انتباه المشاهد في الثواني الأولى</li>
+              <li data-i18n="skill_edit_3">مونتاج الفيديوهات وتحرير الصوت والصورة</li>
+              <li data-i18n="skill_edit_4">العمل الاحترافي ببرنامج CapCut Pro</li>
+              <li data-i18n="skill_edit_5">إنتاج YouTube Shorts بمقاسات وتنسيقات مناسبة</li>
+              <li data-i18n="skill_edit_6">صناعة المحتوى القصير (Short-form Content)</li>
+              <li data-i18n="skill_edit_7">تجهيز الكليبات للنشر عبر مختلف منصات التواصل الاجتماعي</li>
+            </ul>
+          </article>
+
+          <!-- 6.3 E-commerce -->
+          <article class="skill-card practical">
+            <div class="skill-card-top">
+              <span class="skill-badge practical-badge" data-i18n="skill_ecom_level">EXPERIENCE & INTEREST</span>
+              <span class="skill-cat-icon">▦</span>
+            </div>
+            <h3 class="skill-title" data-i18n="skill_ecom_title">E-commerce (التجارة الإلكترونية)</h3>
+            <p class="skill-desc" data-i18n="skill_ecom_desc">اهتمام عملي بتجربة المتاجر الرقمية، إدارة المنتجات، وفهم متطلبات العملاء وأصحاب المتاجر.</p>
+            <ul class="skill-list">
+              <li data-i18n="skill_ecom_1">تجربة إدارة المتجر الإلكتروني على أرض الواقع</li>
+              <li data-i18n="skill_ecom_2">مفاهيم إدارة كتالوج المنتجات وتسعيرها</li>
+              <li data-i18n="skill_ecom_3">التعامل مع المنتجات والخدمات الرقمية</li>
+              <li data-i18n="skill_ecom_4">فهم احتياجات العملاء وسلوك الشراء عبر الإنترنت</li>
+              <li data-i18n="skill_ecom_5">أساسيات البيع عبر المنصات الرقمية (Online Selling)</li>
+              <li data-i18n="skill_ecom_6">التعرف على منصات التجارة الإلكترونية المختلفة واستخداماتها</li>
+            </ul>
+          </article>
+
+          <!-- 6.4 Web Development (Learning Path) -->
+          <article class="skill-card learning">
+            <div class="skill-card-top">
+              <span class="skill-badge learning-badge" data-i18n="skill_web_level">LEARNING PATH</span>
+              <span class="skill-cat-icon">⌘</span>
+            </div>
+            <h3 class="skill-title" data-i18n="skill_web_title">Web Development (تطوير المواقع)</h3>
+            <p class="skill-desc" data-i18n="skill_web_desc">مسار تعلم يهدف لبناء مواقع تجارية متكاملة تلبي احتياجات حقيقية وتُباع كخدمات للعملاء.</p>
+            <ul class="skill-list">
+              <li data-i18n="skill_web_1">بناء مواقع تجارية للأنشطة والمحلات (Business Websites)</li>
+              <li data-i18n="skill_web_2">إنشاء متاجر إلكترونية لمحلات الملابس والأحذية</li>
+              <li data-i18n="skill_web_3">إنشاء كتالوجات المنتجات التفاعلية (Product Catalogs)</li>
+              <li data-i18n="skill_web_4">بناء لوحات تحكم للإدارة (Admin Dashboards)</li>
+              <li data-i18n="skill_web_5">نظام إدارة المنتجات، الصور، والأسعار</li>
+              <li data-i18n="skill_web_6">إدارة ومتابعة طلبات العملاء (Order Management)</li>
+              <li data-i18n="skill_web_7">تصميم متجاوب بالكامل مع كافة الشاشات (Responsive Web Design)</li>
+              <li data-i18n="skill_web_8">التطوير بمساعدة الذكاء الاصطناعي مع فهم عميق للكود</li>
+            </ul>
+          </article>
+
+          <!-- 6.5 App Development (Learning Path) -->
+          <article class="skill-card learning">
+            <div class="skill-card-top">
+              <span class="skill-badge learning-badge" data-i18n="skill_app_level">LEARNING PATH</span>
+              <span class="skill-cat-icon">▣</span>
+            </div>
+            <h3 class="skill-title" data-i18n="skill_app_title">App Development (تطوير التطبيقات)</h3>
+            <p class="skill-desc" data-i18n="skill_app_desc">مسار تعلم لتطوير تطبيقات جوال مخصصة لأداء وظائف محددة وحل مشاكل إدارة الأعمال اليومية.</p>
+            <ul class="skill-list">
+              <li data-i18n="skill_app_1">تطبيقات الهواتف الذكية (Mobile Applications)</li>
+              <li data-i18n="skill_app_2">تطبيقات نقاط البيع والكاشير (POS Applications)</li>
+              <li data-i18n="skill_app_3">أنظمة الكاشير الميسرة للمتاجر الصغرى والمتوسطة</li>
+              <li data-i18n="skill_app_4">إدارة وتتبع المخزون والكميات (Inventory Management)</li>
+              <li data-i18n="skill_app_5">إدارة وتسجيل المبيعات اليومية والفواتير</li>
+              <li data-i18n="skill_app_6">تطوير تطبيقات مخصصة وفق رغبة العميل (Custom Apps)</li>
+              <li data-i18n="skill_app_7">تقديم حلول برمجية مخصصة لكل نشاط تجاري</li>
+            </ul>
+          </article>
+
+          <!-- 6.6 AI-Assisted Development -->
+          <article class="skill-card learning">
+            <div class="skill-card-top">
+              <span class="skill-badge approach-badge" data-i18n="skill_ai_level">LEARNING APPROACH</span>
+              <span class="skill-cat-icon">✦</span>
+            </div>
+            <h3 class="skill-title" data-i18n="skill_ai_title">AI-Assisted Development</h3>
+            <p class="skill-desc" data-i18n="skill_ai_desc">استخدام الذكاء الاصطناعي كمسرّع للإنجاز مع التركيز التام على استيعاب وفحص وتنقيح الأكواد.</p>
+            <ul class="skill-list">
+              <li data-i18n="skill_ai_1">البرمجة بمساعدة الذكاء الاصطناعي (AI-Assisted Coding)</li>
+              <li data-i18n="skill_ai_2">فهم معماري للكود ومراجعته قبل التنفيذ (Code Understanding)</li>
+              <li data-i18n="skill_ai_3">اكتشاف وحل الأخطاء البرمجية (Debugging)</li>
+              <li data-i18n="skill_ai_4">تحسين أداء وتنظيم الكود (Code Optimization)</li>
+              <li data-i18n="skill_ai_5">التخطيط الهندسي للمشاريع وتحديد المتطلبات بدقة</li>
+              <li data-i18n="skill_ai_6">تحويل الأفكار إلى منتجات رقمية قابلة للاستخدام والتسويق</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRACTICAL EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="exp_eyebrow">03 / EXPERIENCE</p>
+          <h2 class="section-title" data-i18n="exp_title">الخبرات والتجارب العملية</h2>
+          <p class="section-subtitle" data-i18n="exp_subtitle">تجارب حقيقية قمت بها في مجالات صناعة المحتوى، شبكات الكمبيوتر، وإدارة المتاجر.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="badge-tag" data-i18n="exp1_tag">CONTENT & VIDEO</span>
+                <span class="timeline-status" data-i18n="exp1_status">PRACTICAL EXPERIENCE</span>
+              </div>
+              <h3 class="timeline-title" data-i18n="exp1_title">Podcast Clipping – Whop</h3>
+              <p class="timeline-desc" data-i18n="exp1_desc">
+                خبرة عملية في انتقاء اللحظات الأقوى من حلقات البودكاست وتحويلها إلى مقاطع فيديو قصيرة مصممة لزيادة التفاعل وجلب المشاهدات عبر منصات التواصل الاجتماعي.
+              </p>
+              <div class="timeline-details">
+                <h4 data-i18n="exp_tasks_title">المسؤوليات والمهام:</h4>
+                <ul class="details-list">
+                  <li data-i18n="exp1_t1">اختيار المقاطع الأكثر أهمية وإثارة داخل الحلقات</li>
+                  <li data-i18n="exp1_t2">تحديد المحتوى الجذاب وبناء Hook افتتاحي قوي في أول ثوانٍ</li>
+                  <li data-i18n="exp1_t3">مونتاج الفيديوهات وتنسيقها باحترافية باستخدام برنامج CapCut Pro</li>
+                  <li data-i18n="exp1_t4">تجهيز ومواءمة الفيديوهات للمنصات (Reels, TikTok, Shorts)</li>
+                </ul>
+                <div class="timeline-note">
+                  <span class="note-dot">ℹ</span>
+                  <span data-i18n="exp1_note">تضمنت هذه التجربة العمل مع صانع المحتوى <strong>Ali Alhamed</strong> بنظام تعويض قائم على أداء ومعدلات المشاهدات.</span>
+                </div>
+                <div class="timeline-action">
+                  <a href="https://www.instagram.com/ali_alhamed_clips.45/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cyan">
+                    <span data-i18n="exp1_btn">عرض حساب الكليبات (@ali_alhamed_clips.45)</span>
+                    <span class="btn-icon">↗</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="badge-tag" data-i18n="exp2_tag">NETWORKING</span>
+                <span class="timeline-status" data-i18n="exp2_status">HANDS-ON PRACTICE</span>
+              </div>
+              <h3 class="timeline-title" data-i18n="exp2_title">Cisco Packet Tracer Labs</h3>
+              <p class="timeline-desc" data-i18n="exp2_desc">
+                تطبيق المفاهيم الأساسية لشبكات الحاسب من خلال مختبرات وتمارين عملية حقيقية على برنامج محاكاة الشبكات Cisco Packet Tracer.
+              </p>
+              <div class="timeline-details">
+                <h4 data-i18n="exp_tasks_title">المسؤوليات والمهام:</h4>
+                <ul class="details-list">
+                  <li data-i18n="exp2_t1">رسم وبناء هياكل شبكية متكاملة (Network Topologies)</li>
+                  <li data-i18n="exp2_t2">توصيل وضبط إعدادات أجهزة الراوتر والسويتش والأجهزة الطرفية (PCs)</li>
+                  <li data-i18n="exp2_t3">تهيئة وتخصيص عناوين IP Addresses لجميع مكونات الشبكة</li>
+                  <li data-i18n="exp2_t4">تطبيق إعدادات بروتوكول توزيع العناوين التلقائي DHCP</li>
+                  <li data-i18n="exp2_t5">اختبار كفاءة وسرعة الاتصال بين مختلف الأجهزة بواسطة أداة Ping</li>
+                  <li data-i18n="exp2_t6">التدرب على اكتشاف الأعطال وحلها (Basic Network Troubleshooting)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="badge-tag" data-i18n="exp3_tag">E-COMMERCE</span>
+                <span class="timeline-status" data-i18n="exp3_status">STORE EXPERIENCE</span>
+              </div>
+              <h3 class="timeline-title" data-i18n="exp3_title">Dukan Online Store (متجر دكان)</h3>
+              <p class="timeline-desc" data-i18n="exp3_desc">
+                تجربة مرتبطة بإدارة متجر إلكتروني منشور على منصة "دكان" المتخصصة في المتاجر الرقمية.
+              </p>
+              <div class="timeline-details">
+                <div class="timeline-store-url">
+                  <span class="url-label" data-i18n="exp3_url_label">رابط المتجر المباشر:</span>
+                  <a href="https://1422866.eg.dukan.shop/" target="_blank" rel="noopener noreferrer" class="external-url-link">
+                    https://1422866.eg.dukan.shop/
+                  </a>
+                </div>
+                <div class="timeline-action">
+                  <a href="https://1422866.eg.dukan.shop/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cyan">
+                    <span data-i18n="exp3_btn">زيارة المتجر (Visit Store)</span>
+                    <span class="btn-icon">↗</span>
+                  </a>
+                </div>
+                <p class="timeline-clarification" data-i18n="exp3_clarify">
+                  * تم توثيق المتجر كرابط فعلي متاح، مع الالتزام بعدم إضافة أي بيانات غير مؤكدة حول طبيعة الدور تفادياً لأي مبالغة.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SHOWCASE SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="proj_eyebrow">04 / PROJECTS</p>
+          <h2 class="section-title" data-i18n="proj_title">المشاريع والأعمال الحالية</h2>
+          <p class="section-subtitle" data-i18n="proj_subtitle">مشاريع تم بناؤها أو تجارب قائمة تمثل هويتي التقنية الحالية دون أي روابط وهمية.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Mahmoud Salah Portfolio -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category" data-i18n="p1_cat">PERSONAL WEBSITE</span>
+              <span class="project-status status-current" data-i18n="p1_status">CURRENT PROJECT</span>
+            </div>
+            <div class="project-icon-box">💻</div>
+            <h3 class="project-title" data-i18n="p1_title">Mahmoud Salah Portfolio</h3>
+            <p class="project-desc" data-i18n="p1_desc">
+              موقع ويب شخصي متكامل يمثل هويتي الرقمية، ويعرض مهاراتي التقنية، خبراتي العملية، مشروعاتي، وخططي المستقبلية مع دعم كامل للغتين العربية والإنجليزية.
+            </p>
+            <div class="project-tech-stack">
+              <span>HTML5 Semantic</span>
+              <span>Modern CSS3</span>
+              <span>Vanilla JS</span>
+              <span>Bilingual i18n</span>
+              <span>Responsive UI</span>
+            </div>
+            <div class="project-links">
+              <a href="#home" class="project-link-btn">
+                <span data-i18n="p1_view">استعراض الموقع الحالي</span>
+                <span class="arrow-sym">↑</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Dukan Online Store -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category" data-i18n="p2_cat">E-COMMERCE</span>
+              <span class="project-status status-existing" data-i18n="p2_status">EXISTING EXPERIENCE</span>
+            </div>
+            <div class="project-icon-box">🛍️</div>
+            <h3 class="project-title" data-i18n="p2_title">Dukan Online Store</h3>
+            <p class="project-desc" data-i18n="p2_desc">
+              متجر إلكتروني قائم ومستضاف عبر منصة "دكان" لتقديم المنتجات والخدمات عبر واجهة تسوق إلكترونية.
+            </p>
+            <div class="project-tech-stack">
+              <span>Dukan Platform</span>
+              <span>E-Commerce</span>
+              <span>Online Catalog</span>
+            </div>
+            <div class="project-links">
+              <a href="https://1422866.eg.dukan.shop/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span data-i18n="p2_view">زيارة المتجر (Visit Store)</span>
+                <span class="arrow-sym">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Cisco Packet Tracer Labs -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category" data-i18n="p3_cat">NETWORKING</span>
+              <span class="project-status status-learning" data-i18n="p3_status">PRACTICAL LEARNING</span>
+            </div>
+            <div class="project-icon-box">🌐</div>
+            <h3 class="project-title" data-i18n="p3_title">Cisco Packet Tracer Labs</h3>
+            <p class="project-desc" data-i18n="p3_desc">
+              مجموعة من التمارين العملية لبناء طوبولوجيا الشبكات، ربط الراوترات بالسويتشات، وضبط بروتوكولات العناوين واختبار الاتصال واستكشاف الأخطاء.
+            </p>
+            <div class="project-tech-stack">
+              <span>Cisco Packet Tracer</span>
+              <span>IPv4 & Subnetting</span>
+              <span>DHCP Server</span>
+              <span>Ping & Tracert</span>
+            </div>
+            <div class="project-links">
+              <a href="#skills" class="project-link-btn">
+                <span data-i18n="p3_view">استعراض تفاصيل المهارات</span>
+                <span class="arrow-sym">↓</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Podcast Clipping -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-category" data-i18n="p4_cat">CONTENT CREATION</span>
+              <span class="project-status status-practical" data-i18n="p4_status">PRACTICAL EXPERIENCE</span>
+            </div>
+            <div class="project-icon-box">🎬</div>
+            <h3 class="project-title" data-i18n="p4_title">Podcast Clipping</h3>
+            <p class="project-desc" data-i18n="p4_desc">
+              تحويل حلقات البودكاست الطويلة إلى مقاطع قصيرة عالية الجاذبية والتأثير والمشاهدات باستخدام برنامج CapCut Pro مع إعداد Hooks مميزة.
+            </p>
+            <div class="project-tech-stack">
+              <span>CapCut Pro</span>
+              <span>Content Hooks</span>
+              <span>Short-form Video</span>
+              <span>Audience Retention</span>
+            </div>
+            <div class="project-links">
+              <a href="https://www.instagram.com/ali_alhamed_clips.45/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span data-i18n="p4_view">مشاهدة حساب المقاطع</span>
+                <span class="arrow-sym">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUTURE PROJECTS SECTION -->
+    <section class="section future-section" id="future-projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="future_eyebrow">05 / FUTURE PROJECTS</p>
+          <h2 class="section-title" data-i18n="future_title">مشاريع مستقبلية قيد التخطيط والتطوير</h2>
+          <p class="section-subtitle" data-i18n="future_subtitle">
+            هذا القسم يوضح اتجاهي المستقبلي في بناء وتقديم منتجات رقمية قابلة للاستخدام والبيع لأصحاب الأنشطة التجارية. (مشاريع مخطط لها وليست منتجات نهائية مكتملة).
+          </p>
+        </div>
+
+        <div class="future-cards-grid">
+          <!-- Future Project 1: E-commerce Website Builder -->
+          <article class="future-card">
+            <div class="future-card-head">
+              <div class="future-badge planned" data-i18n="future_badge_planned">PLANNED PRODUCT · قيد التخطيط</div>
+              <span class="future-num">01</span>
+            </div>
+            <h3 class="future-title" data-i18n="fp1_title">E-commerce Website Builder (متاجر جاهزة للمحلات)</h3>
+            <div class="future-idea-box">
+              <strong data-i18n="idea_label">فكرة المشروع:</strong>
+              <p data-i18n="fp1_idea">
+                بناء مواقع وتطبيقات تجارية مخصصة لأصحاب المحلات والأنشطة الصغيرة، مثل: متاجر الملابس، متاجر الأحذية، متاجر الإكسسوارات، والأنشطة التجارية المحلية.
+              </p>
+            </div>
+            <div class="future-core-concept">
+              <strong data-i18n="concept_label">المفهوم الأساسي للمنتج:</strong>
+              <p data-i18n="fp1_concept">
+                أقوم ببناء الموقع وبرمجته بالكامل، بينما يحصل صاحب المتجر على لوحة تحكم إدارية سهلة (Admin Dashboard) تمكنه بشكل مستقل من إضافة وتعديل وحذف المنتجات وتغيير الصور والأسعار ومتابعة الطلبات بنفسه دون الحاجة للرجوع إليّ في كل تعديل.
+              </p>
+            </div>
+            <div class="future-features">
+              <h4 data-i18n="features_label">المميزات المخطط لها:</h4>
+              <ul class="features-list">
+                <li data-i18n="fp1_f1">متجر إلكتروني مخصص ومجهز بهوية العميل</li>
+                <li data-i18n="fp1_f2">إدارة شاملة للمنتجات وتصنيفاتها</li>
+                <li data-i18n="fp1_f3">رفع وإدارة صور المنتجات بسهولة</li>
+                <li data-i18n="fp1_f4">إدارة الأسعار والعروض والتخفيضات</li>
+                <li data-i18n="fp1_f5">لوحة متابعة وإدارة الطلبات الواردة</li>
+                <li data-i18n="fp1_f6">لوحة تحكم إدارية بسيطة باللغة العربية</li>
+                <li data-i18n="fp1_f7">تصميم متجاوب وسريع جداً على شاشات الهواتف</li>
+                <li data-i18n="fp1_f8">سهولة الإدارة المباشرة من الموبايل لصاحب المحل</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Future Project 2: POS & Cashier Application -->
+          <article class="future-card">
+            <div class="future-card-head">
+              <div class="future-badge planned" data-i18n="future_badge_planned">PLANNED PRODUCT · قيد التخطيط</div>
+              <span class="future-num">02</span>
+            </div>
+            <h3 class="future-title" data-i18n="fp2_title">POS & Cashier Application (تطبيق كاشير ونقاط بيع)</h3>
+            <div class="future-idea-box">
+              <strong data-i18n="idea_label">فكرة المشروع:</strong>
+              <p data-i18n="fp2_idea">
+                تطوير تطبيق نقاط بيع (POS) ونظام كاشير وإدارة مخازن مخصص للمحلات ومتاجر التجزئة لتسهيل المعاملات وسرعة المحاسبة.
+              </p>
+            </div>
+            <div class="future-core-concept">
+              <strong data-i18n="concept_label">المفهوم الأساسي للمنتج:</strong>
+              <p data-i18n="fp2_concept">
+                توفير نظام سريع وموثوق يحل مشكلة تسجيل الحسابات الورقية المعقدة، ويمنح صاحب النشاط إمكانية متابعة المبيعات والأرباح والمخزون في الوقت الفعلي من خلال واجهة بسيطة وعملية.
+              </p>
+            </div>
+            <div class="future-features">
+              <h4 data-i18n="features_label">المميزات المخطط لها:</h4>
+              <ul class="features-list">
+                <li data-i18n="fp2_f1">تسجيل عمليات البيع وطباعة الفواتير بسرعة</li>
+                <li data-i18n="fp2_f2">إضافة المنتجات وتعديل الأسعار في ثوانٍ</li>
+                <li data-i18n="fp2_f3">حساب إجمالي الفواتير والمتبقي تلقائياً</li>
+                <li data-i18n="fp2_f4">إدارة المخزون والتنبيه عند نقص الكميات</li>
+                <li data-i18n="fp2_f5">تقارير مبيعات يومية وشهرية دقيقة</li>
+                <li data-i18n="fp2_f6">واجهة مستخدم عصرية وسهلة الاستخدام لعمال الكاشير</li>
+                <li data-i18n="fp2_f7">إمكانية تخصيص المزايا وفقاً لنشاط كل متجر بعينه</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Future Project 3: Custom Mobile Applications -->
+          <article class="future-card">
+            <div class="future-card-head">
+              <div class="future-badge indev" data-i18n="future_badge_dev">IN DEVELOPMENT · قيد التطوير</div>
+              <span class="future-num">03</span>
+            </div>
+            <h3 class="future-title" data-i18n="fp3_title">Custom Mobile Applications (تطبيقات موبايل مخصصة)</h3>
+            <div class="future-idea-box">
+              <strong data-i18n="idea_label">فكرة المشروع:</strong>
+              <p data-i18n="fp3_idea">
+                تطوير تطبيقات هواتف ذكية مخصصة بالكامل وفق متطلبات العملاء لتنفيذ وظائف محددة وحل مشاكل إدارة الأعمال، مثل: تطبيقات تنظيم المهام، تطبيقات الخدمات، وتطبيقات إدارة المنتجات.
+              </p>
+            </div>
+            <div class="future-workflow">
+              <strong data-i18n="workflow_title">مراحل وخطوات العمل مع العميل:</strong>
+              <ol class="workflow-steps">
+                <li data-i18n="wf_s1">عرض الفكرة: يطرح العميل فكرته واحتياجات مشروعه.</li>
+                <li data-i18n="wf_s2">تحديد المتطلبات: حصر الميزات الفنية والوظائف بدقة.</li>
+                <li data-i18n="wf_s3">تصميم الواجهات: تصميم واجهة مستخدم (UI/UX) مريحة.</li>
+                <li data-i18n="wf_s4">التطوير والبرمجة: كتابة الكود وبناء النظام بالكامل.</li>
+                <li data-i18n="wf_s5">الاختبار: فحص التطبيق والتأكد من خلوه من الأخطاء.</li>
+                <li data-i18n="wf_s6">التسليم والدعم: تسليم التطبيق للعميل وتقديم الصيانة والتحديثات حسب الاتفاق.</li>
+              </ol>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUSINESS MODEL SECTION -->
+    <section class="section business-section" id="business-model">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="biz_eyebrow">06 / BUSINESS MODEL</p>
+          <h2 class="section-title" data-i18n="biz_title">نموذج العمل والخدمات</h2>
+          <p class="section-subtitle" data-i18n="biz_subtitle">
+            هدفي تقديم منتجات رقمية وحلول تقنية حقيقية للعملاء كخدمات مدفوعة بنموذج واضح وعادل يضمن استقلالية العميل واستمرار دعمه.
+          </p>
+        </div>
+
+        <div class="business-models-grid">
+          <!-- Website Model -->
+          <div class="business-card">
+            <div class="business-card-icon">🌐</div>
+            <h3 class="biz-title" data-i18n="biz_web_title">نموذج عمل المواقع الإلكترونية</h3>
+            <p class="biz-intro" data-i18n="biz_web_desc">
+              يدفع العميل مقابل تطوير وبرمجة الموقع. وبعد التسليم، يستطيع إدارة منتجاته بنفسه من خلال لوحة تحكم إدارية مستقلة.
+            </p>
+            <div class="biz-sub-services">
+              <h4 data-i18n="biz_services_title">الخدمات الإضافية المتاحة:</h4>
+              <ul class="biz-services-list">
+                <li data-i18n="biz_w_s1">صيانة دورية شهرية للموقع</li>
+                <li data-i18n="biz_w_s2">تحديثات مستمرة وتطوير أداء</li>
+                <li data-i18n="biz_w_s3">إضافة مميزات وصفحات جديدة حسب الطلب</li>
+                <li data-i18n="biz_w_s4">دعم فني واستشارات تقنية مباشرة</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- App Model -->
+          <div class="business-card">
+            <div class="business-card-icon">📱</div>
+            <h3 class="biz-title" data-i18n="biz_app_title">نموذج عمل تطبيقات الموبايل</h3>
+            <p class="biz-intro" data-i18n="biz_app_desc">
+              يدفع العميل مقابل تطوير وبرمجة التطبيق ويحصل على الملكية أو حقوق الاستخدام الكاملة وفقاً للاتفاق المبرم.
+            </p>
+            <div class="biz-sub-services">
+              <h4 data-i18n="biz_services_title">الخدمات الإضافية المتاحة:</h4>
+              <ul class="biz-services-list">
+                <li data-i18n="biz_a_s1">صيانة شهرية منتظمة للتطبيق</li>
+                <li data-i18n="biz_a_s2">دعم فني وحل أي مشكلات تشغيلية</li>
+                <li data-i18n="biz_a_s3">تحديثات التطبيق وإصدار نسخ أحدث</li>
+                <li data-i18n="biz_a_s4">تطوير ميزات مخصصة إضافية</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Updates Notification System -->
+        <div class="future-system-banner">
+          <div class="system-banner-icon">🔔</div>
+          <div class="system-banner-text">
+            <div class="system-banner-tag" data-i18n="biz_sys_tag">FUTURE DEVELOPMENT PLAN · خطة تطوير مستقبلية</div>
+            <h3 data-i18n="biz_sys_title">نظام إشعارات التحديثات للعملاء (Updates Notification System)</h3>
+            <p data-i18n="biz_sys_desc">
+              إحدى أفكاري المستقبلية المستهدفة هي تطوير نظام إشعارات ذكي يُعلم العملاء وأصحاب المتاجر عند توفر تحديثات أو ميزات برمجية جديدة لمواقعهم وتطبيقاتهم؛ مما يتيح للعميل استعراض التحديث وطلب تنفيذه بضغطة زر عند حاجته.
+              <br />
+              <small data-i18n="biz_sys_note">* هذا النظام يمثل رؤية مستقبلية ضمن خطط التطوير القادمة ولا يُعرض كميزة حالية قائمة.</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & GET IN TOUCH SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-i18n="contact_eyebrow">07 / CONTACT</p>
+          <h2 class="section-title" data-i18n="contact_title">
+            عندك فكرة أو مشروع؟<br />
+            <span class="gradient-text">خلينا نتكلم ونحولها لحقيقة.</span>
+          </h2>
+          <p class="section-subtitle" data-i18n="contact_subtitle">
+            أنا دائماً مهتم بالتواصل بخصوص فرص التعلم، التعاون المثمر، المشاريع الرقمية، وتطوير مواقع الويب وتطبيقات الهواتف.
+          </p>
+        </div>
+
+        <!-- Contact Cards Grid -->
+        <div class="contact-grid">
+          <!-- Direct Channels Column -->
+          <div class="contact-channels">
+            <!-- Email -->
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap cyan">✉</div>
+              <div class="channel-info">
+                <span class="channel-label" data-i18n="lbl_email">EMAIL ADDRESS</span>
+                <a href="mailto:amhmoudsalah47@gmail.com" class="channel-value" dir="ltr">amhmoudsalah47@gmail.com</a>
+              </div>
+              <div class="channel-actions">
+                <a href="mailto:amhmoudsalah47@gmail.com" class="btn btn-sm btn-outline-cyan" data-i18n="btn_send_email">إرسال إيميل ↗</a>
+                <button type="button" class="btn btn-sm btn-ghost copy-btn" data-copy="amhmoudsalah47@gmail.com" data-i18n="btn_copy">نسخ</button>
+              </div>
+            </div>
+
+            <!-- WhatsApp 1 -->
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap green">📱</div>
+              <div class="channel-info">
+                <span class="channel-label" data-i18n="lbl_wa1">WHATSAPP (رقم 1)</span>
+                <span class="channel-value" dir="ltr">01145690507</span>
+              </div>
+              <div class="channel-actions">
+                <a href="https://wa.me/201145690507" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-green" data-i18n="btn_open_wa">محادثة واتساب ↗</a>
+                <button type="button" class="btn btn-sm btn-ghost copy-btn" data-copy="01145690507" data-i18n="btn_copy">نسخ</button>
+              </div>
+            </div>
+
+            <!-- WhatsApp 2 -->
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap green">📱</div>
+              <div class="channel-info">
+                <span class="channel-label" data-i18n="lbl_wa2">WHATSAPP (رقم 2)</span>
+                <span class="channel-value" dir="ltr">01070619939</span>
+              </div>
+              <div class="channel-actions">
+                <a href="https://wa.me/201070619939" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-green" data-i18n="btn_open_wa">محادثة واتساب ↗</a>
+                <button type="button" class="btn btn-sm btn-ghost copy-btn" data-copy="01070619939" data-i18n="btn_copy">نسخ</button>
+              </div>
+            </div>
+
+            <!-- Facebook -->
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap blue">👥</div>
+              <div class="channel-info">
+                <span class="channel-label" data-i18n="lbl_fb">FACEBOOK</span>
+                <span class="channel-value">Mahmoud Salah</span>
+              </div>
+              <div class="channel-actions">
+                <a href="https://www.facebook.com/mahmoud.salah.914272?locale=ar_AR" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-cyan" data-i18n="btn_visit_profile">زيارة الصفحة ↗</a>
+              </div>
+            </div>
+
+            <!-- Personal Instagram -->
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap purple">📸</div>
+              <div class="channel-info">
+                <span class="channel-label" data-i18n="lbl_ig_personal">INSTAGRAM (الحساب الشخصي)</span>
+                <span class="channel-value" dir="ltr">@mahmoud_salah.45</span>
+              </div>
+              <div class="channel-actions">
+                <a href="https://www.instagram.com/mahmoud_salah.45/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-cyan" data-i18n="btn_visit_profile">زيارة الحساب ↗</a>
+              </div>
+            </div>
+
+            <!-- Podcast Clipping Instagram -->
+            <div class="contact-channel-card">
+              <div class="channel-icon-wrap purple">🎬</div>
+              <div class="channel-info">
+                <span class="channel-label" data-i18n="lbl_ig_podcast">INSTAGRAM (أعمال اقتطاع البودكاست)</span>
+                <span class="channel-value" dir="ltr">@ali_alhamed_clips.45</span>
+              </div>
+              <div class="channel-actions">
+                <a href="https://www.instagram.com/ali_alhamed_clips.45/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-cyan" data-i18n="btn_visit_profile">زيارة الحساب ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Interactive Direct Message Form -->
+          <div class="contact-form-panel">
+            <div class="form-panel-header">
+              <h3 data-i18n="form_heading">أرسل رسالتك مباشرة</h3>
+              <p data-i18n="form_sub">
+                اكتب رسالتك واختر وسيلة الإرسال المباشرة (واتساب أو إيميل). ستفتح رسالتك جاهزة للإرسال فوراً وبشكل حقيقي 100%.
+              </p>
+            </div>
+
+            <form id="direct-contact-form" class="direct-form">
+              <div class="form-group">
+                <label for="form-name" data-i18n="lbl_form_name">اسمك الكريم:</label>
+                <input type="text" id="form-name" required placeholder="أدخل اسمك" />
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" data-i18n="lbl_form_email">بريدك الإلكتروني أو هاتفك:</label>
+                <input type="text" id="form-email" required placeholder="example@email.com أو رقم هاتفك" />
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" data-i18n="lbl_form_msg">رسالتك أو تفاصيل مشروعك:</label>
+                <textarea id="form-message" rows="4" required placeholder="اكتب فكرتك أو استفسارك هنا..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label data-i18n="lbl_form_destination">طريقة الإرسال المفضلة:</label>
+                <div class="dest-radio-group">
+                  <label class="radio-label">
+                    <input type="radio" name="send-dest" value="wa1" checked />
+                    <span data-i18n="opt_wa1">واتساب (01145690507)</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="send-dest" value="wa2" />
+                    <span data-i18n="opt_wa2">واتساب (01070619939)</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="send-dest" value="email" />
+                    <span data-i18n="opt_email">الإيميل الرسمي</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                  <span data-i18n="btn_submit_msg">بدء الإرسال المباشر</span>
+                  <span class="btn-icon">💬</span>
+                </button>
+              </div>
+
+              <p class="form-guarantee" data-i18n="form_guarantee">
+                🔒 يتم توجيه رسالتك مباشرة عبر التطبيق المعتمد دون أي تزييف أو ادعاء إرسال وهمي.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL MEDIA SHOWCASE SECTION -->
+    <section class="section social-section" id="social">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-eyebrow" data-i18n="social_eyebrow">08 / SOCIAL PROFILES</p>
+          <h2 class="section-title" data-i18n="social_title">حساباتي على منصات التواصل</h2>
+          <p class="section-subtitle" data-i18n="social_subtitle">تواصل معي أو تابع أعمالي ومحتواي على مختلف المنصات.</p>
+        </div>
+
+        <div class="social-cards-grid">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/mahmoud.salah.914272?locale=ar_AR" target="_blank" rel="noopener noreferrer" class="social-box fb-box">
+            <span class="social-box-icon">f</span>
+            <div class="social-box-info">
+              <span class="social-plat-name">Facebook</span>
+              <strong class="social-plat-user">Mahmoud Salah</strong>
+            </div>
+            <span class="social-arrow">↗</span>
+          </a>
+
+          <!-- Personal Instagram -->
+          <a href="https://www.instagram.com/mahmoud_salah.45/" target="_blank" rel="noopener noreferrer" class="social-box ig-box">
+            <span class="social-box-icon">ig</span>
+            <div class="social-box-info">
+              <span class="social-plat-name" data-i18n="social_ig_personal_label">Instagram (Personal)</span>
+              <strong class="social-plat-user" dir="ltr">@mahmoud_salah.45</strong>
+            </div>
+            <span class="social-arrow">↗</span>
+          </a>
+
+          <!-- Podcast Instagram -->
+          <a href="https://www.instagram.com/ali_alhamed_clips.45/" target="_blank" rel="noopener noreferrer" class="social-box ig-clips-box">
+            <span class="social-box-icon">🎬</span>
+            <div class="social-box-info">
+              <span class="social-plat-name" data-i18n="social_ig_clips_label">Podcast Clipping Work</span>
+              <strong class="social-plat-user" dir="ltr">@ali_alhamed_clips.45</strong>
+            </div>
+            <span class="social-arrow">↗</span>
+          </a>
+
+          <!-- WhatsApp 1 -->
+          <a href="https://wa.me/201145690507" target="_blank" rel="noopener noreferrer" class="social-box wa-box">
+            <span class="social-box-icon">wa</span>
+            <div class="social-box-info">
+              <span class="social-plat-name">WhatsApp (011)</span>
+              <strong class="social-plat-user" dir="ltr">01145690507</strong>
+            </div>
+            <span class="social-arrow">↗</span>
+          </a>
+
+          <!-- WhatsApp 2 -->
+          <a href="https://wa.me/201070619939" target="_blank" rel="noopener noreferrer" class="social-box wa-box">
+            <span class="social-box-icon">wa</span>
+            <div class="social-box-info">
+              <span class="social-plat-name">WhatsApp (010)</span>
+              <strong class="social-plat-user" dir="ltr">01070619939</strong>
+            </div>
+            <span class="social-arrow">↗</span>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:amhmoudsalah47@gmail.com" class="social-box mail-box">
+            <span class="social-box-icon">@</span>
+            <div class="social-box-info">
+              <span class="social-plat-name">Email</span>
+              <strong class="social-plat-user" dir="ltr">amhmoudsalah47@gmail.com</strong>
+            </div>
+            <span class="social-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand-col">
+        <a href="#home" class="brand">
+          <span class="brand-badge">M</span>
+          <span class="brand-name">Mahmoud<span class="brand-dot">.</span></span>
+        </a>
+        <p class="footer-title" data-i18n="footer_title">Mahmoud Salah · IT Student · Creative Builder</p>
+        <p class="footer-slogan" data-i18n="footer_slogan">"Building skills, turning ideas into solutions."</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 data-i18n="footer_quick_links">روابط سريعة</h4>
+        <ul class="footer-nav">
+          <li><a href="#home" data-i18n="nav_home">الرئيسية</a></li>
+          <li><a href="#about" data-i18n="nav_about">نبذة عني</a></li>
+          <li><a href="#skills" data-i18n="nav_skills">المهارات</a></li>
+          <li><a href="#experience" data-i18n="nav_experience">الخبرات</a></li>
+          <li><a href="#projects" data-i18n="nav_projects">المشاريع</a></li>
+          <li><a href="#future-projects" data-i18n="nav_future_projects">مشاريع مستقبلية</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">تواصل معي</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4 data-i18n="footer_contact_title">بيانات التواصل</h4>
+        <p><a href="mailto:amhmoudsalah47@gmail.com" dir="ltr">amhmoudsalah47@gmail.com</a></p>
+        <p><a href="https://wa.me/201145690507" target="_blank" rel="noopener noreferrer" dir="ltr">WhatsApp: 01145690507</a></p>
+        <p><a href="https://wa.me/201070619939" target="_blank" rel="noopener noreferrer" dir="ltr">WhatsApp: 01070619939</a></p>
+        <div class="footer-social-row">
+          <a href="https://www.facebook.com/mahmoud.salah.914272?locale=ar_AR" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+          <a href="https://www.instagram.com/mahmoud_salah.45/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          <a href="https://www.instagram.com/ali_alhamed_clips.45/" target="_blank" rel="noopener noreferrer" aria-label="Clips">Clips</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright" data-i18n="footer_copy">Copyright © 2026 Mahmoud Salah. All Rights Reserved.</p>
+        <a href="#home" class="back-to-top" id="back-to-top" aria-label="العودة للأعلى">
+          <span data-i18n="btn_top">العودة للأعلى</span>
+          <span class="top-arrow">↑</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification for Copying Actions -->
+  <div class="toast-notification" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
